@@ -10,7 +10,6 @@ fun main() {
 fun partOne() =
     getInput().filter { line -> line.password.count { it == line.letter } in line.num1..line.num2 }.size
 
-
 fun partTwo() =
     getInput().filter { line -> line.hasLetterAtIndex(line.num1).xor(line.hasLetterAtIndex(line.num2)) }.size
 
